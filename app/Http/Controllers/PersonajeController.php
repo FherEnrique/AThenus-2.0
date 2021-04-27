@@ -16,7 +16,7 @@ class PersonajeController extends Controller
             for ($i = 0; $i < 10; $i++) {
                 $actual = array(
                     'nombre' => $nombre[rand(0, count($nombre) - 1)]->nombre,
-                    'salud' => 100, //AQUI CAMBIE
+                    'salud' => 100,
                     'sexo' => 'm',
                     'arbol' => 0,
                     'compi' => 0,
@@ -24,7 +24,7 @@ class PersonajeController extends Controller
                 );
                 $actual2 = array(
                     'nombre' => $nombre2[rand(0, count($nombre2) - 1)]->nombre,
-                    'salud' => 99, //AQUI CAMBIE
+                    'salud' => 100,
                     'sexo' => 'f',
                     'arbol' => 0,
                     'compi' => 0,
