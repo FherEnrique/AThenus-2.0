@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PersonajeController;
+use App\Http\Controllers\VistasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('jugar/', [VistasController::class, 'play']);
+
+Route::get('acerca de/', [VistasController::class, 'about']);
+
+Route::post('jugar/random/', [PersonajeController::class, 'generar'])->name('random');
+
+Route::post('jugar/personas/', [PersonajeController::class, 'tomar'])->name('personas');
+
+Route::get('historia/', [VistasController::class, 'game'])->name('game');
+
+Route::get('ganador/', [VistasController::class, 'win']);
