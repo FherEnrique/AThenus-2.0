@@ -71,16 +71,9 @@
         </ul>
 
         <hr class="new5">
-        @php
-            $i =1;
-        @endphp
         @foreach ($accion as $item)
             {{ $item }}
             <br><br>
-            <h1>{{ $i }}</h1>
-            @php
-                $i++;
-            @endphp
         @endforeach
         <hr class="new5">
 
