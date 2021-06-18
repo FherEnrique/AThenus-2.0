@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ActionController;
+use App\Http\Controllers\HelperController;
 use App\Http\Controllers\NameController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +22,12 @@ Route::get('/', function () {
 Route::get('/play/', [NameController::class, 'play']);
 
 Route::post('/takeNames/', [NameController::class, 'takeNames']);
+
 Route::post('/generateNames/', [NameController::class, 'generateNames']);
+
+Route::get('/history/', [ActionController::class, 'history']);
+
+Route::get('/about/', [HelperController::class, 'about']);
 
 /*Route::get('jugar/', [VistasController::class, 'play']); SOLO DE CONSULTA
 

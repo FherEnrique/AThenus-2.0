@@ -30,8 +30,8 @@
             <div class="inner">
                 <h3 class="masthead-brand">ATheneus</h3>
                 <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link" href="{{url('jugar/')}}">Jugar</a>
-                <a class="nav-link" href="{{url('acerca de/')}}">Acerca de</a>
+                    <a class="nav-link" href="/play/">Jugar</a>
+                <a class="nav-link" href="/about/">Acerca de</a>
                 </nav>
             </div>
         </header>
