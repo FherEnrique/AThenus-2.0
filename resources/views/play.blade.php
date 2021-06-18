@@ -8,13 +8,13 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-male fa-lg"></i></div>
                 </div>
-                <input type="text" name="chico[]"  class="form-control" required autocomplete="on">
+                <input type="text" name="boy[]"  class="form-control" required autocomplete="on">
             </div> <br>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-female fa-lg"></i></div>
                 </div>
-                <input type="text" name="chica[]"  class="form-control" required autocomplete="on">
+                <input type="text" name="girl[]"  class="form-control" required autocomplete="on">
             </div>
             <br><br>
             @endfor

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Name;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
 
 class NameController extends Controller
 {
@@ -14,63 +14,63 @@ class NameController extends Controller
     }
     public function takeNames(Request $request)
     {
-        $listaVivo = array();
-        foreach ($request->chico as $key) {
-            $actual = array(
-                'nombre' => $key,
-                'salud' => 100,
-                'sexo' => 'm',
-                'arbol' => 0,
-                'compi' => 0,
-                'dias' => 0
+        $listLive = array();
+        foreach ($request->boy as $key) {
+            $helper = array(
+                'name' => $key,
+                'health' => 100,
+                'sex' => 'm',
+                'tree' => 0,
+                'ally' => 0,
+                'days' => 0
             );
-            array_push($listaVivo, $actual);
+            array_push($listLive, $helper);
         }
-        foreach ($request->chica as $key) {
-            $actual = array(
-                'nombre' => $key,
-                'salud' => 100,
-                'sexo' => 'f',
-                'arbol' => 0,
-                'compi' => 0,
-                'dias' => 0
+        foreach ($request->girl as $key) {
+            $helper = array(
+                'name' => $key,
+                'health' => 100,
+                'sex' => 'f',
+                'tree' => 0,
+                'ally' => 0,
+                'days' => 0
             );
-            array_push($listaVivo, $actual);
+            array_push($listLive, $helper);
         }
-        session(['listaVivo' => json_encode($listaVivo), 'diaActual' => 1, 'listaMuerto' => json_encode(array())]);
-        return redirect()->to('historia/')->send();
+        session(['listLive' => json_encode($listLive), 'day' => 1, 'listDeath' => json_encode(array())]);
+        return redirect()->to('/history/')->send();
     }
     public function generateNames()
     {
         try {
-            $listaVivo = array();
-            $nombre = DB::select('SELECT nombre FROM nombres WHERE sexo = ?', ['m']);
-            $nombre2 = DB::select('SELECT nombre FROM nombres WHERE sexo = ?', ['f']);
+            $listLive = array();
+            $nameBoy = Name::where('sex', '=', 'm')->get();
+            $nameGirl = Name::where('sex', '=', 'f')->get();
             for ($i = 0; $i < 10; $i++) {
-                $actual = array(
-                    'nombre' => $nombre[rand(0, count($nombre) - 1)]->nombre,
-                    'salud' => 100,
-                    'sexo' => 'm',
-                    'arbol' => 0,
-                    'compi' => 0,
-                    'dias' => 0
+                $helperBoy = array(
+                    'name' => $nameBoy[rand(0, count($nameBoy) - 1)]->name,
+                    'health' => 100,
+                    'sex' => 'm',
+                    'tree' => 0,
+                    'ally' => 0,
+                    'days' => 0
                 );
-                $actual2 = array(
-                    'nombre' => $nombre2[rand(0, count($nombre2) - 1)]->nombre,
-                    'salud' => 100,
-                    'sexo' => 'f',
-                    'arbol' => 0,
-                    'compi' => 0,
-                    'dias' => 0
+                $helperGirl = array(
+                    'name' => $nameGirl[rand(0, count($nameGirl) - 1)]->name,
+                    'health' => 100,
+                    'sex' => 'f',
+                    'tree' => 0,
+                    'ally' => 0,
+                    'days' => 0
                 );
-                array_push($listaVivo, $actual);
-                array_push($listaVivo, $actual2);
+                array_push($listLive, $helperBoy);
+                array_push($listLive, $helperGirl);
             }
-            session(['listaVivo' => json_encode($listaVivo), 'diaActual' => 1, 'listaMuerto' => json_encode(array())]);
-            return redirect()->to('historia/')->send();
+            session(['listLive' => json_encode($listLive), 'day' => 1, 'listDeath' => json_encode(array())]);
+            return redirect()->to('/history/')->send();
         } catch (\Throwable $th) {
             echo "alert('Se ha producido un error volver a ingresarlo')";
-            return redirect()->to('jugar/')->send();
+            return redirect()->to('/play/')->send();
         }
     }
 }
