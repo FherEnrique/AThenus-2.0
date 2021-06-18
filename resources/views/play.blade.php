@@ -1,6 +1,6 @@
 @extends('layout')
     @section('content')
-        <form action="{{ route('personas') }}" method="POST">
+        <form action="/takeNames/" method="POST">
             @csrf
             @for ($i = 0; $i < 10; $i++)
             <label>Distrito {{ $i+1 }}</label>
@@ -20,7 +20,7 @@
             @endfor
             <input type="submit" value="JUGAR" class="btn btn-success" style="width:40%;">
         </form><br><br>
-        <form action="{{ route('random') }}" method="POST">
+        <form action="/generateNames/" method="POST">
             @csrf
             <input type="submit" value="Nombres al azar" class="btn btn-info" style="width:40%;">
         </form>

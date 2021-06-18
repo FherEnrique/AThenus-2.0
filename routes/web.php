@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\NameController;
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/play/', [NameController::class, 'play']);
+
+Route::post('/takeNames/', [NameController::class, 'takeNames']);
+Route::post('/generateNames/', [NameController::class, 'generateNames']);
 
 /*Route::get('jugar/', [VistasController::class, 'play']); SOLO DE CONSULTA
 
