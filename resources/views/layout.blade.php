@@ -42,8 +42,7 @@
 
         <footer class="mastfoot mt-auto">
             <div class="inner">
-                <p>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a>
-                    from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>.</p>
+                <p>Made with coffe and hard drugs. &#x1F49D;</p>
             </div>
         </footer>
     </div>

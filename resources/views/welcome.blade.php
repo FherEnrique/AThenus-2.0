@@ -80,7 +80,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     ATheneus <br><br> 
-                    <a href="{{url('jugar/')}}"><button class="boton">Jugar</button></a>
+                    <a href="/play/"><button class="boton">Jugar</button></a>
                 </div>
             </div>
         </div>
