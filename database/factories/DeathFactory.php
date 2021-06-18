@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Nombref;
+use App\Models\Death;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class NombrefFactory extends Factory
+class DeathFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Nombref::class;
+    protected $model = Death::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class NombrefFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->firstNameFemale,
-            'sexo' => 'f'
+            'description' => $this->faker->sentence(20),
         ];
     }
 }

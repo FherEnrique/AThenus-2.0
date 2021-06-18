@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Nombre;
+use App\Models\Name;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class NombreFactory extends Factory
+class NameFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Nombre::class;
+    protected $model = Name::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,8 @@ class NombreFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->firstNameMale,
-            'sexo' => 'm'
+            'name' => $this->faker->firstName,
+            'sex' => $this->faker->randomElement(['m','f']),
         ];
     }
 }

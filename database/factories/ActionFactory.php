@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Muerte;
+use App\Models\Action;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class MuerteFactory extends Factory
+class ActionFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Muerte::class;
+    protected $model = Action::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +22,9 @@ class MuerteFactory extends Factory
     public function definition()
     {
         return [
-            'descripcion' => $this->faker->sentence(20),
+            'number_character' => $this->faker->randomElement(['1', '2']),
+            'health' => $this->faker->numberBetween(-25, 25),
+            'description' => $this->faker->sentence(10)
         ];
     }
 }

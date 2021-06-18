@@ -1,9 +1,6 @@
 <?php
 
-use App\Http\Controllers\PersonajeController;
-use App\Http\Controllers\VistasController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,7 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('jugar/', [VistasController::class, 'play']);
+/*Route::get('jugar/', [VistasController::class, 'play']); SOLO DE CONSULTA
 
 Route::get('acerca de/', [VistasController::class, 'about']);
 
@@ -29,4 +26,4 @@ Route::post('jugar/personas/', [PersonajeController::class, 'tomar'])->name('per
 
 Route::get('historia/', [VistasController::class, 'game'])->name('game');
 
-Route::get('ganador/', [VistasController::class, 'win']);
+Route::get('ganador/', [VistasController::class, 'win']);*/

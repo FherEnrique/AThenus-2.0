@@ -2,13 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\accion;
-use App\Models\auxiliar;
-use App\Models\muerte;
-use App\Models\nombre;
-use App\Models\nombref;
-
-
+use App\Models\Helper;
+use App\Models\Action;
+use App\Models\Death;
+use App\Models\Name;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,10 +17,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        nombre::factory(20)->create();
-        nombref::factory(20)->create();
-        muerte::factory(20)->create();
-        accion::factory(100)->create();
-        auxiliar::factory(5)->create();
+        Name::factory(50)->create();
+        Death::factory(20)->create();
+        Action::factory(100)->create();
+        Helper::factory(5)->create();
     }
 }

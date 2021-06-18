@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Auxiliar;
+use App\Models\Helper;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class AuxiliarFactory extends Factory
+class HelperFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Auxiliar::class;
+    protected $model = Helper::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,8 @@ class AuxiliarFactory extends Factory
     public function definition()
     {
         return [
-            'id_padre' => $this->faker->numberBetween(1, 20),
-            'id_hijo' => $this->faker->numberBetween(21, 40)
+            'id_dad' => $this->faker->numberBetween(1, 20),
+            'id_son' => $this->faker->numberBetween(21, 40)
         ];
     }
 }
