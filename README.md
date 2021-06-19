@@ -70,7 +70,7 @@ git clone https://github.com/FherEnrique/BakeryDonMario.git
 
 _____________________________
 
-Cambiar el nombre del archivo ".env.e" a ".env".
+Cambiar el nombre del archivo "env" a ".env".
 
 Ejecutar el siguiente comando para generar la carpeta llamada "vendor".
 
