@@ -1,63 +1,171 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About AThenus 2.0
+__________________________________________________________________
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## AThenus 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+_Creación de un juego en Laravel 8 con buenas prácticas de programación y con un patrón de diseño Template Method y Factory Method además de implementar una arquitectura de software MVC por parte del Framework._
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+### Arquitectura Clean :hammer:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![Clean Architecture](https://miro.medium.com/max/800/1*0R0r00uF1RyRFxkxo3HVDg.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Camel Case :camel:
 
-## Laravel Sponsors
+_Utilizado en la programación dentro de Laravel para mantener un código escalable en el tiempo._
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Snake Case :snake:
 
-### Premium Partners
+_Utilizado dentro de la base de datos._
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+### Arquitectura MVC :building_construction:
 
-## Contributing
+![MVC](https://miro.medium.com/max/3840/1*W8l3eAbfJRzRLVkipzAMVw.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Patrones de Diseños :art:
 
-## Code of Conduct
+#### Template Method :package:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![TM](https://www.researchgate.net/profile/Amnon-Eden/publication/258568562/figure/fig22/AS:669479994404872@1536627877735/11-UML-Class-diagram-of-the-structure-of-the-Template-Method-pattern.ppm)
 
-## Security Vulnerabilities
+#### Factory Method :factory:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![FM](https://programmerlib.com/wp-content/uploads/2020/07/factorypattern.png)
 
-## License
+___________________________________________________________________
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Atheneus V2.0
+### Prerequisitos de instalación 📋
+
+_Para poder hacer uso de la aplicación y de la modificicación del código es necesario tener instalado las siguientes herramientas:_
+
+- [PHPStorm - IDE](https://www.jetbrains.com/es-es/phpstorm/).
+- [PHP v7.4](https://www.php.net/downloads)
+- [Composer v2.1](https://getcomposer.org/download/)
+- [NodeJS v15.11, NPM 7.x.x - Windows](https://nodejs.org/es/download/)
+- [NVM v15.11, NPM 7.x.x - Linux](https://github.com/nvm-sh/nvm)
+- [Laravel 8.x](https://laravel.com/docs/8.x/installation)
+- [MySQL](https://www.mysql.com/downloads/)
+- [DBeaver - Windows, Linux](https://dbeaver.io/)
+
+________________________________________________
+
+## Guía de Instalación 💻
+
+Asegurarse que tenga instalado los prerequisitos solicitados.
+
+Ejecutar el comando para clonar el proyecto.
+
+```bash
+git clone https://github.com/FherEnrique/BakeryDonMario.git
+```
+
+### IMPORTANTE :bulb:
+
+_____________________________
+
+Cambiar el nombre del archivo "env" a ".env".
+
+Ejecutar el siguiente comando para generar la carpeta llamada "vendor".
+
+```bash
+composer install
+```
+
+Luego ejecutar el siguiente comando para instalar y configurar TailwindCSS.
+
+```bash
+npm install
+```
+### Generación de la base de datos :card_file_box:
+
+______________________________________________
+
+Agregar las credenciales de la base de datos en el archivo llamado ".env" y crear la base de datos llamada "vendetodo".
+
+Luego ejecutar el comando para las migraciones y la generación de los datos con los factories de laravel.
+
+```bash
+php artisan migrate --seed
+```
+
+Y por último ejecutar el comando para todo el funcionamiento del proyecto
+
+```bash
+php artisan serve
+```
+___________________________________________________
+
+## Autores ✒️
+
+
+EQUIPO DE SCRUM :busts_in_silhouette:
+=======================================
+1. Stakeholder
+
+- Alexander Alberto Siguenza - 01T
+----------------------------------------------
+
+2. Product owner
+
+- Fher Enrique Climaco Escamilla - 01T
+----------------------------------------------
+
+3. Scrum master
+
+- Mario Josué Beltrán García - 01T
+----------------------------------------------
+
+4. Team
+
+- José Samuel Mena Reyes - 01T
+- German Alexander Meléndez Serrano - 01T
+-----------------------------------------------
+
+## Enlace de Interés :eyes:
+
+- [Tablero de Trello](https://trello.com/b/zl3plzcs/iso-team)
+- [Figma - UI/UX](https://www.figma.com/file/ZZVnysgPTLi3GzCMPKAVZm/Proyecto-Athenus-UI-UX?node-id=0%3A1)
+- [Video Funcional]()
+
+## Licencia 📄
+
+License Creative Commons - CC-BY-N
+==============================
+
+![CC](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Cc-by-nc_icon.svg/1200px-Cc-by-nc_icon.svg.png)
+
+Permite distribuir y hacer cambios en la obra siempre y cuando se incluya el nombre del autor y la licencia. Sin embargo, no se permite su uso con fines comerciales.
+
+MIT License
+===================
+
+Copyright (c) 2021 AThenus
+-------------------------------------------------
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
