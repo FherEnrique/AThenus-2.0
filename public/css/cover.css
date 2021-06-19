@@ -1,41 +1,92 @@
 /*
  * Globals
  */
+@font-face {
+  font-family: "OptimusPrinceps";
+  src: url("../fonts/OptimusPrinceps.ttf");
+}
+@font-face {
+  font-family: "OptimusPrincepsSemiBold";
+  src: url("../fonts/OptimusPrincepsSemiBold.ttf");
+}
+@font-face {
+  font-family: "Benne-Regular";
+  src: url("../fonts/Benne-Regular.ttf");
+}
 
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+
+html, body {
+  background-color: #363636;
+  color: #aaa;
+  font-family: "OptimusPrinceps", cursive;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+body{
+  box-shadow: none !important;
+}
+.about{
+  margin-top: 100px;
+}
+.ptextCenter{
+  font-family: "Benne-Regular";
+  font-size: 1.2em;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+.full-height {
+  height: 100vh;
 }
 
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
-
-body {
-  display: -ms-flexbox;
+.flex-center {
+  align-items: center;
   display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);*/
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+  font-family: "OptimusPrincepsSemiBold", serif;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+.boton{
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 6px;
+  width: 500px;
+  height: 100px;
+  background-color: #d55;
+  font-size: 60%;
+  font-family: "OptimusPrinceps", cursive;
 }
 
 .cover-container {
@@ -52,6 +103,7 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  font-family: "OptimusPrincepsSemiBold";
 }
 
 .nav-masthead .nav-link {
@@ -85,24 +137,6 @@ body {
   }
 }
 
-
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-  
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+.new5{
+  border-top: 5px dotted white;
 }
