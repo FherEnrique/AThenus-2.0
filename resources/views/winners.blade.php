@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.homeLayout')
     @section('content')
         @if (count($winner) == 1)
             <h1>EL GANADOR ES: {{ $winner[0]->name }}</h1>

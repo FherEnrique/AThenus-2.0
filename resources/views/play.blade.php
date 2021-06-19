@@ -1,5 +1,5 @@
-@extends('layout')
-    @section('content')
+@extends('..layouts.homeLayout')
+    @section('container')
         <form action="/takeNames/" method="POST">
             @csrf
             @for ($i = 0; $i < 10; $i++)

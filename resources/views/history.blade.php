@@ -1,5 +1,5 @@
-@extends('layout')
-    @section('content')
+@extends('..layouts.homeLayout')
+    @section('container')
         <h1>Dia {{ $day - 1 }}</h1>
         <h1>Muertos ahora</h1>
         <ul>
