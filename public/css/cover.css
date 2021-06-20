@@ -21,7 +21,7 @@ html, body {
   color: #aaa;
   font-family: "OptimusPrinceps", cursive;
   font-weight: 200;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
 }
 body{

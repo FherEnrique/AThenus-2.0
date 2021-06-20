@@ -31867,6 +31867,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+canvas {
+  position: fixed;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -187681,3 +187685,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
