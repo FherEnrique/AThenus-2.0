@@ -4,7 +4,7 @@
             <div class="absolute block flex items-center justify-center w-full h-full">
                 <div class="title text-center m-b-md">
                     ATheneus <br><br>
-                    <a href="/play/"><button class="transition duration-75 hover:from-red-500 hover:to-yellow-500">Jugar</button></a>
+                    <a href="/play/" class="py-3 px-14 rounded-full transition duration-500 ease-in-out bg-gradient-to-r from-red-400 to-yellow-500 hover:text-white hover:from-yellow-500 hover:to-red-500 hover:no-underline">Jugar</a>
                 </div>
             </div>
         </div>
