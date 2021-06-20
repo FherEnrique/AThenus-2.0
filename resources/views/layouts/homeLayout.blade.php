@@ -36,7 +36,7 @@
             <main role="main">
                 @yield('container')
             </main>
-            <footer class="mastfoot mt-auto">
+            <footer class="mastfoot mt-auto p-6">
                 <div class="inner">
                     <p>Made with coffe and hard drugs. &#x1F49D;</p>
                 </div>
