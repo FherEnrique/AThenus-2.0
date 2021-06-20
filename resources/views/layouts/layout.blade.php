@@ -9,12 +9,14 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2944ad1077.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="./css/favicon.png">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/cover.css') }}" rel="stylesheet">
 </head>
     <body>
-        <main role="main">
+        <main srole="main">
             @yield('content')
         </main>
+        <script src="{{ asset('js/app.js') }}"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
                 integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
                 crossorigin="anonymous"></script>
