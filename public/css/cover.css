@@ -19,10 +19,15 @@
 html, body {
   background-color: #363636;
   color: #aaa;
-  font-family: "OptimusPrinceps", cursive;
+  font-family: "Benne-Regular", cursive;
   font-weight: 200;
   /* height: 100vh; */
   margin: 0;
+}
+.bodyimage{
+  background-image: url("../img/trees.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body{
   box-shadow: none !important;
@@ -63,6 +68,9 @@ body{
   font-size: 84px;
   font-family: "OptimusPrincepsSemiBold", serif;
 }
+span{
+  color: white;
+}
 
 .links > a {
   color: #636b6f;
@@ -92,7 +100,6 @@ body{
 .cover-container {
   max-width: 42em;
 }
-
 
 /*
  * Header
