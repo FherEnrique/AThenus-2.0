@@ -22,7 +22,7 @@
     </div>
 </div> --}}
 <div id="particles-js" class="relative h-96 h-screen">
-    <div class="w-full mx-auto text-center absolute">
+    <div class="w-full mx-auto text-center absolute z-50">
         <div class="cover-container flex p-3 mx-auto flex flex-col">
             <header class="masthead mb-auto">
                 <div class="inner">
