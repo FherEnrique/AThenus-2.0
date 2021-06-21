@@ -8,7 +8,7 @@
 
 __________________________________________________________________
 
-## AThenus 
+## ATheneus
 
 _Creación de un juego en Laravel 8 con buenas prácticas de programación y con un patrón de diseño Template Method y Factory Method además de implementar una arquitectura de software MVC por parte del Framework._
 
@@ -83,6 +83,12 @@ Luego ejecutar el siguiente comando para instalar y configurar TailwindCSS.
 ```bash
 npm install
 ```
+Y luego ejecutar este comando para generar el archivo app.css
+
+```bash
+npm run dev
+```
+
 ### Generación de la base de datos :card_file_box:
 
 ______________________________________________
@@ -131,9 +137,10 @@ EQUIPO DE SCRUM :busts_in_silhouette:
 ## Enlace de Interés :eyes:
 
 - [Tablero de Trello](https://trello.com/b/zl3plzcs/iso-team)
-- [Documentación](docs/)  
+- [Documentación](docs/Documentacion_ISO.pdf)  
 - [Figma - UI/UX](https://www.figma.com/file/ZZVnysgPTLi3GzCMPKAVZm/Proyecto-Athenus-UI-UX?node-id=0%3A1)
 - Video Funcional
+
 [![Video Funcional](docs/Capture.PNG)](https://www.loom.com/share/5fa5e1b811454933bfd7a4ce153978ef)
 
 ## Licencia 📄
