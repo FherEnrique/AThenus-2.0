@@ -16,21 +16,18 @@
 
 /* Links */
 
-html, body {
-  background-color: #363636;
+body {
+  background-size: cover;
+  background: linear-gradient(0deg, #292524 0%,  #0F172A 100%) no-repeat fixed;
   color: #aaa;
   font-family: "Benne-Regular", cursive;
   font-weight: 200;
-  /* height: 100vh; */
   margin: 0;
 }
 .bodyimage{
   background-image: url("../img/trees.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-body{
-  box-shadow: none !important;
 }
 .about{
   margin-top: 100px;
@@ -40,9 +37,6 @@ body{
   font-size: 1.2em;
 }
 
-.full-height {
-  height: 100vh;
-}
 
 .flex-center {
   align-items: center;
@@ -73,7 +67,6 @@ span{
 }
 
 .links > a {
-  color: #636b6f;
   padding: 0 25px;
   font-size: 13px;
   font-weight: 600;
@@ -116,7 +109,6 @@ span{
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
