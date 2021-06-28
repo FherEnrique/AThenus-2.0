@@ -24,9 +24,13 @@
 
             <form action="/history/" method="GET">
                 @if (count($final) <= 1)
-                    <input type="submit" value="Finalizar los juegos del hambre" class="btn btn-dark uppercase text-center text-2xl">
+                    <button type="submit" class="bg-transparent hover:bg-red-800 text-blue-dark p-2 font-semibold hover:text-white px-4 border border-blue hover:border-transparent rounded">
+                        <i class="fas fa-chess-rook mr-4 text-center"></i> FINALIZAR LOS JUEGOS DEL HAMBRE
+                    </button>
                 @else
-                    <input type="submit" value="siguiente día" class="btn btn-light uppercase text-center text-2xl">
+                    <button type="submit" class="bg-transparent hover:bg-blue-800 text-blue-dark p-2 font-semibold hover:text-white px-4 border border-blue hover:border-transparent rounded">
+                        <i class="fas fa-angle-double-right mr-4 text-center"></i> SIGUIENTE DIA
+                    </button>
                 @endif
             </form>
         </div>
