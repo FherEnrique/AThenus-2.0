@@ -33,3 +33,7 @@ Route::get('/about/', [HelperController::class, 'about']);
 Route::get('/ganador/', [ActionController::class, 'win']);
 
 Route::get('/destroyTheGame/', [DeathController::class, 'destroyTheGame']);
+
+Route::get('/upDistricts/', [NameController::class, 'upDistricts']);
+
+Route::get('/downDistricts/', [NameController::class, 'downDistricts']);

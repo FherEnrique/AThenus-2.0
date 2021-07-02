@@ -2,7 +2,6 @@
     @section('container')
         <div class="p-7 bg-gray-600 shadow-2xl bg-opacity-20 text-white border border-white border-2 border-b-4 border-opacity-50 rounded-3xl">
             <p class="text-3xl text-center p-4">Día {{ $day - 1 }}</p>
-            <p class="text-3xl text-right">Muertes: </p>
             <p class="text-2xl text-center p-4">Muertos ahora</p>
             <ul class="mb-5">
                 @forelse ($deathNow as $item)

@@ -5,6 +5,7 @@
                     <p class="text-center text-6xl mx-auto p-14">EL GANADOR ES </p>
                     <p class="text-center text-7xl mx-auto mt-8">{{ $winner[0]->name }}</p>
                 @else
+                    <script src="{{ asset('js/win.js') }}"></script>
                     <p class="text-center text-6xl mx-auto p-14">Todos han muerto...</p>
                     <img src="/img/F.png" alt="F keycap" class="img-f mx-auto" width="100" height="100">
                     <p class="text-center text-6xl mx-auto p-14">Press <span class="text-yellow-400">F</span> to pay respect</p>
