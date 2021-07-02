@@ -2,19 +2,23 @@
     @section('container')
         <div class="p-7 mt-8 mb-8 border-2 bg-gray-600 shadow-2xl bg-opacity-20 text-white border border-white border-b-4 border-r-4 border-opacity-50 rounded-3xl">
             <div class="flex flex-row-reverse mt-8 mb-8">
+                <a href="/upDistricts/">
+                    <div>
+                        <button class="bg-transparent hover:bg-blue-800 text-blue-dark p-2 font-semibold hover:text-white px-4 border border-blue hover:border-transparent rounded">
+                            <i class="fas fa-plus text-center"></i>
+                        </button>
+                    </div>
+                </a>
                 <div>
-                    <button class="bg-transparent hover:bg-blue-800 text-blue-dark p-2 font-semibold hover:text-white px-4 border border-blue hover:border-transparent rounded">
-                        <i class="fas fa-plus text-center"></i>
-                    </button>
+                    <h1 class="py-2 px-4 text-center text-3xl">{{ $numberDistricts }}</h1>
                 </div>
-                <div>
-                    <h1 class="py-2 px-4 text-center text-3xl">{{$i = 1}}</h1>
-                </div>
-                <div>
-                    <button class="bg-transparent hover:bg-blue-800 text-blue-dark p-2 font-semibold hover:text-white px-4 border border-blue hover:border-transparent rounded">
-                        <i class="fas fa-minus text-center"></i>
-                    </button>
-                </div>
+                <a href="/downDistricts/">
+                    <div>
+                        <button class="bg-transparent hover:bg-blue-800 text-blue-dark p-2 font-semibold hover:text-white px-4 border border-blue hover:border-transparent rounded">
+                            <i class="fas fa-minus text-center"></i>
+                        </button>
+                    </div>
+                </a>
                 <div>
                     <h1 class="py-2 px-4 text-center 2xl:mr-80 xl:mr-80 lg:mr-80 md:mr-16 text-3xl">
                         Distritos:
@@ -23,7 +27,7 @@
             </div>
             <form action="/takeNames/" method="POST">
                 @csrf
-                @for ($i = 0; $i < 1; $i++)
+                @for ($i = 0; $i < $numberDistricts; $i++)
                     <label class="text-2xl text-center"> <i class="fas fa-city mr-4"></i> Distrito {{ $i+1 }}</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">

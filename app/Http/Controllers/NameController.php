@@ -10,7 +10,11 @@ class NameController extends Controller
 {
     public function play()
     {
-        return view('play');
+        if (empty(session('numberDistricts'))){
+            session(['numberDistricts' => 13]);
+        }
+        $numberDistricts = session('numberDistricts');
+        return view('play', compact('numberDistricts'));
     }
     public function takeNames(Request $request)
     {
@@ -46,7 +50,8 @@ class NameController extends Controller
             $listLive = array();
             $nameBoy = Name::where('sex', '=', 'm')->get();
             $nameGirl = Name::where('sex', '=', 'f')->get();
-            for ($i = 0; $i < 10; $i++) {
+            $numberName = session('numberDistricts');
+            for ($i = 0; $i < $numberName; $i++) {
                 $helperBoy = array(
                     'name' => $nameBoy[rand(0, count($nameBoy) - 1)]->name,
                     'health' => 100,
@@ -72,5 +77,20 @@ class NameController extends Controller
             echo "alert('Se ha producido un error volver a ingresarlo')";
             return redirect()->to('/play/')->send();
         }
+    }
+    protected function upDistricts()
+    {
+        $helper = session('numberDistricts');
+        $helper++;
+        session(['numberDistricts' => $helper]);
+        redirect()->to('/play/')->send();
+    }
+    protected function downDistricts()
+    {
+        $helper = session('numberDistricts');
+        $helper--;
+        $helper = ($helper == 0) ? 1 : $helper;
+        session(['numberDistricts' => $helper]);
+        redirect()->to('/play/')->send();
     }
 }
