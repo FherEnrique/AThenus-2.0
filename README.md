@@ -139,6 +139,7 @@ EQUIPO DE SCRUM :busts_in_silhouette:
 - [Tablero de Trello](https://trello.com/b/zl3plzcs/iso-team)
 - [Documentación](docs/Documentacion_ISO.pdf)  
 - [Figma - UI/UX](https://www.figma.com/file/ZZVnysgPTLi3GzCMPKAVZm/Proyecto-Athenus-UI-UX?node-id=0%3A1)
+- [Manual de Usuario](https://www.canva.com/design/DAEjXLmZQ0Y/g2X3akWDRgT9hKnPg7by_g/view?utm_content=DAEjXLmZQ0Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 - Video Funcional
 
 [![Video Funcional](docs/Capture.PNG)](https://www.loom.com/share/5fa5e1b811454933bfd7a4ce153978ef)
